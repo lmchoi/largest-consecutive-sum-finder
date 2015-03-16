@@ -30,4 +30,9 @@ public class SumFinderMainTest {
     public void shouldReturnSumStartingAfterANegative() {
         assertThat(consecutiveSumFinder.find(new int[]{1, -5, 3}), is(3));
     }
+
+    @Test
+    public void paulosTest() {
+        assertThat(consecutiveSumFinder.find(new int[]{1, 0, -2, 3, 2, 2, -10}), is(7));
+    }
 }

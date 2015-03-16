@@ -9,9 +9,7 @@ public class ConsecutiveSumFinder {
 
             if (consecutiveSum < 0) {
                 consecutiveSum = 0;
-            }
-
-            if (consecutiveSum > largestSum) {
+            } else if (consecutiveSum > largestSum) {
                 largestSum = consecutiveSum;
             }
         }
